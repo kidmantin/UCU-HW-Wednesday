@@ -70,3 +70,10 @@ def wer_torch(pred_batch, true_batch):
         max_len = max(len(tokens), len(targets))
         error_rate += distance / max_len
     return error_rate/pred_batch.shape[0]
+
+
+if __name__ == "__main__":
+    str_1 = 'Joyce enjoyed eating pancakes with ketchup.'
+    str_2 = 'Rick enjoyed eating salad with ketchup.'
+    
+    print(wer(str_1, str_2)) # returns 0.3333333333333333, 2 (different words) / 6 (number of words) = 0.3333333333333333
