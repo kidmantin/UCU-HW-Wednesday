@@ -9,4 +9,4 @@ Also the time complexity of wer with batches as input is measured in task 2, sin
 
 ## Second task:
 
-I retrained a model which showed itself very good on the test data
+Solution is in a file called "wednesday.ipynb", there I retrained a model which showed itself very good on the test data, also there are some comments in the file itself, there is not much to say about it
