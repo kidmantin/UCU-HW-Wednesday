@@ -73,7 +73,8 @@ def wer_torch(pred_batch, true_batch):
 
 
 if __name__ == "__main__":
-    str_1 = 'Joyce enjoyed eating pancakes with ketchup.'
-    str_2 = 'Rick enjoyed eating salad with ketchup.'
-    
-    print(wer(str_1, str_2)) # returns 0.3333333333333333, 2 (different words) / 6 (number of words) = 0.3333333333333333
+    print(f"words: banana, bobana: cer - {cer('banana', 'bobana')}") # returns 0.3333333333333333, 2 (different characters) / 6 (number of characters)
+    print(f"Sentence 1: Joyce enjoyed eating pancakes with ketchup. \n \
+        Sentence 2: Rick enjoyed eating salad with ketchup. \n \
+        wer - {wer('Joyce enjoyed eating pancakes with ketchup.', 'Rick enjoyed eating salad with ketchup.')}") # returns 0.3333333333333333, 2 (different words) / 6 (number of words) = 0.3333333333333333
+
